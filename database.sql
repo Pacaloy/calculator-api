@@ -1,0 +1,14 @@
+CREATE DATABASE FSD_2022_CRUZ;
+
+CREATE TABLE users (
+  id SERIAL NOT NULL PRIMARY KEY,
+  uuid VARCHAR(50) NOT NULL,
+  os VARCHAR(7)
+);
+
+CREATE TABLE transactions (
+  id BIGSERIAL NOT NULL PRIMARY KEY,
+  user_uuid VARCHAR(50) NOT NULL,
+  calculation VARCHAR(255) NOT NULL,
+  time_stamp timestamp NOT NULL DEFAULT NOW()
+);

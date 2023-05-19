@@ -3,7 +3,8 @@ CREATE DATABASE FSD_2022_CRUZ;
 CREATE TABLE users (
   id SERIAL NOT NULL PRIMARY KEY,
   uuid VARCHAR(50) NOT NULL,
-  os VARCHAR(7)
+  os VARCHAR(7),
+  time_created timestamp NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE transactions (

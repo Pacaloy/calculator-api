@@ -58,7 +58,7 @@ app.post("/app/user/:uid/transaction", async (req, res) => {
       [uid, calculation]
     );
 
-    res.send("OK");
+    res.json("OK");
   } catch (err) {
     console.error(err.message);
   }
@@ -73,7 +73,7 @@ app.delete("/app/user/:uid/transaction", async (req, res) => {
       [uid]
     );
 
-    res.send("Resource Deleted");
+    res.json("Resource Deleted");
   } catch (err) {
     console.error(err.message);
   }

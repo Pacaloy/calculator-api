@@ -79,6 +79,7 @@ app.delete("/app/user/:uid/transaction", async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => res.send('calculator-api'));
 app.listen(port, () => {
   console.log(`server has started on port ${port}`);
 });

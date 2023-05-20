@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 
 dotenv.config();
-const port = process.env.API_PORT;
+const port = process.env.PORT;
 
 // Middlewares
 app.use(cors());
